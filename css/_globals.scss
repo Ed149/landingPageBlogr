@@ -1,0 +1,50 @@
+html{
+    box-sizing: border-box;
+    font-size:1rem;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    padding:0;
+    margin:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.cta{
+    display: inline-block;
+    padding:.9rem 2rem;
+    font-family: $ubuntu;
+    font-weight: 600;
+    color:$white;
+    transition: all ease-in-out .2s;
+    &__active{
+        background-color: $white;
+        color:$lightRed;
+        border-radius: 4rem;
+
+        &:hover{
+            background-color: $veryLightRed;
+            color:white;
+        }
+    }
+    &__border{ 
+        border: 1px solid white;
+        border-radius: 4rem;
+        
+        &:hover{
+            background-color:$white;
+            color:$lightRed;
+            
+        }
+    }
+    &__sign{
+        background:linear-gradient(90deg,$gvLighRed,$gLightRed);
+        
+    }
+    &__log{
+        color:$vDarkBlackBlue;
+    }
+}
