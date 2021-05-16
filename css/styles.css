@@ -15,6 +15,19 @@ a {
   text-decoration: none;
 }
 
+.centrar {
+  text-align: center;
+}
+
+.section {
+  margin: 3rem 0;
+}
+
+.section__heading {
+  font-family: "Overpass", sans-serif;
+  color: #3f4164;
+}
+
 .cta {
   display: inline-block;
   padding: .9rem 2rem;
