@@ -11,16 +11,31 @@ html{
 a{
     text-decoration: none;
 }
+.fw-300{
+    font-weight: 300;
+}
+.fw-400{
+    font-weight: 400;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-600{
+    font-weight: 600;
+}
+.fw-700{
+    font-weight: 700;
+}
 
-.centrar{
+
+.center{
     text-align: center;
 }
-.section{
-    margin: 3rem 0;
-    &__heading{
-        font-family: $overpass;
-        color:$gvDarkDesaturatedBlue;
-    }
+
+.container{
+    display: block;
+    margin:0 2rem;
+    max-width:1200px;
 }
 
 .cta{
