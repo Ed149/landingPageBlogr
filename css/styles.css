@@ -35,6 +35,10 @@ a {
   font-weight: 700;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
 .center {
   text-align: center;
 }
@@ -43,6 +47,14 @@ a {
   display: block;
   margin: 0 2rem;
   max-width: 1200px;
+}
+
+@media (min-width: 48em) {
+  .sect1 {
+    height: 50rem;
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 .cta {
@@ -450,13 +462,41 @@ a {
   color: #3f4164;
 }
 
-.section__img {
-  height: 18rem;
-  background-image: url("../img/illustration-editor-mobile.svg");
-  background-position: center center;
-  background-size: cover;
+@media (min-width: 48em) {
+  .section__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+  }
+}
+
+.section__img img {
+  width: 100%;
   -webkit-filter: drop-shadow(1px 1px 0.8rem #c8c8cb);
           filter: drop-shadow(1px 1px 0.8rem #c8c8cb);
+}
+
+@media (min-width: 48em) {
+  .section__img img {
+    width: 55%;
+    position: absolute;
+    top: 0.0625rem;
+    right: -13.5rem;
+  }
+}
+
+.section__info {
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .section__info {
+    padding-left: 7rem;
+    text-align: left;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .section__info h3 {
@@ -465,11 +505,23 @@ a {
   margin-bottom: 1rem;
 }
 
+@media (min-width: 48em) {
+  .section__info h3 {
+    padding: 0;
+  }
+}
+
 .section__info p {
   padding: 0 .3rem;
   line-height: 1.6;
   font-size: 1rem;
   font-family: "Ubuntu", sans-serif;
   color: #c8c8cb;
+}
+
+@media (min-width: 48em) {
+  .section__info p {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -27,6 +27,9 @@ a{
     font-weight: 700;
 }
 
+body{
+    background-color: #f2f2f2;
+}
 
 .center{
     text-align: center;
@@ -37,6 +40,14 @@ a{
     margin:0 2rem;
     max-width:1200px;
 }
+.sect1{
+    @media(min-width:48em){
+        height:50rem;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
 
 .cta{
     display: inline-block;

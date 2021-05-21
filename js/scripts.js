@@ -1,6 +1,9 @@
 'use strict'
 
 window.addEventListener('load',()=>{
+    var scWidth = screen.width;
+    console.log(scWidth)
+    const secImg = document.querySelector('#secImg');
     const menu = document.querySelector('#hamburguer');
     const nav = document.querySelector('.nav');
     const drop = document.querySelectorAll('.dropBtn');
@@ -10,15 +13,20 @@ window.addEventListener('load',()=>{
         nav.classList.toggle('openMenu');
 
     });
-    for(let i = 0; drop.length; i++){
+    for(let i = 0; i < drop.length; i++){
        drop[i].addEventListener('click',()=>{
            console.log(drop[i]);
            dropContent[i].classList.toggle('max-height');
            console.log(dropContent[2]);
        });
 
-    }
+    }//MEnu drop
    
-
+    
+    if(scWidth < 768){
+        secImg.setAttribute('src','img/illustration-editor-mobile.svg');
+    }else{
+        secImg.setAttribute('src','img/illustration-editor-desktop.svg')
+    }
 
 });
