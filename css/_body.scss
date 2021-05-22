@@ -1,9 +1,29 @@
 .section{
     margin-top: 3rem;
     margin-bottom: 3rem;
+    &__phones{
+        text-align: center;
+        position: absolute;
+        top:-10rem;
+        img{
+
+        width:100%;
+        }
+    }
+    &2{
+        width:100%;
+        height:30rem;
+        background: linear-gradient(180deg,$gVDarkGrayBlue,$gvDarkDesaturatedBlue);
+        border-top-right-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+        position:relative;
+        margin-top:13rem;
+    }
+
     &__heading{
         font-family: $overpass;
         color:$gvDarkDesaturatedBlue;
+
     }
 
     &__content{
@@ -57,4 +77,22 @@
         }
         
     }
+}
+.circles__pattern{
+    
+    background-image: url('../img/bg-pattern-circles.svg');
+    background-size:cover;
+    height:120%;
+    background-position: center -11.75rem;   
+    background-repeat: no-repeat;
+    border-top-right-radius: 5rem;
+    
+    
+    @media(min-width:48em){
+        background-position: -14.2rem -32rem;
+        background-repeat: no-repeat;
+        width:75%;
+    }
+    
+   
 }
