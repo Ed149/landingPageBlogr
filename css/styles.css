@@ -647,6 +647,7 @@ body {
 @media (min-width: 48em) {
   .section3__img img {
     margin-left: -12.8rem;
+    width: 63rem;
   }
 }
 
@@ -664,5 +665,82 @@ body {
         flex-basis: 30%;
     text-align: left;
   }
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-right-radius: 4rem;
+  background-color: #25252d;
+  font-family: "Ubuntu", sans-serif;
+}
+
+@media (min-width: 48em) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer__logo {
+  margin-top: 5rem;
+}
+
+@media (min-width: 48em) {
+  .footer__logo {
+    margin-top: -10rem;
+  }
+}
+
+.footer h3 {
+  color: white;
+  margin: 2.5rem 0;
+  font-weight: 300;
+}
+
+.footer__nav {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+@media (min-width: 48em) {
+  .footer__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    text-align: left;
+  }
+}
+
+.footer__nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__nav-links a {
+  color: #c8c8cb;
+  margin-bottom: 1.3rem;
 }
 /*# sourceMappingURL=styles.css.map */
