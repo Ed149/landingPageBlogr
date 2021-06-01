@@ -10,19 +10,36 @@
         border-bottom-left-radius: 5rem;
         position:relative;
         margin-top:13rem;
+        @media(min-width:48em){
+            display: flex;
+            align-items: center;
+            height:25rem;
+            margin-top:-3rem;
+        }
         &__phones{
             text-align: center;
-            
             position: relative;
+            @media(min-width:48em){
+                flex-basis: 80%;         
+            }
             img{
                 margin-top: -11.8rem;
                 width:100%;
+                @media(min-width:48em){
+                    width:100%;
+                    margin-top: 1rem;
+                    margin-left: 3rem;
+                }
             }
         }
         &__text{
             text-align: center;
             padding:0 2.3rem ;
             position: relative;
+            @media(min-width:48em){
+                text-align: left;
+                margin-left: 2.9rem;
+            }
             p{
                 line-height: 1.8;
             }
@@ -32,6 +49,7 @@
                 margin-bottom: 1rem;
                 font-size: 2.4rem;
             }
+
         }
         &__pattern{
             width:100%;
@@ -42,6 +60,11 @@
             background-position: center -10rem;
             background-size: 30rem 30rem;
             z-index: -0;
+            @media(min-width:48em){
+                background-size: 50rem;
+                background-position: -7rem -18rem;
+                height: 25rem;
+            }
         }
     }
     
