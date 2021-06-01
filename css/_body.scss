@@ -122,14 +122,34 @@
         }
     }
     &3{
+        @media(min-width:48em){
+            display: flex;
+            align-items: center;
+            margin-top:8rem;
+        }
         &__img{
-            
+            @media(min-width:48em){
+                flex-basis: 50%;
+            }            
             img{
                 width: 100%;
+                @media(min-width:48em){
+                margin-left: -12.8rem;
+
+                }
+
             }
         }
         &__text{
+            p{
+            line-height: 1.7;
+
+            }
             text-align: center;
+            @media(min-width:48em){
+                flex-basis: 30%;
+                text-align: left;
+            }
         }
     }
     
